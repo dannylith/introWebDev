@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<div id="title" align="center">
+			<h1>Danny's Restaurant</h1>
+		</div>
+		<div id="navigation">
+			<hr />
+				<p><a href="index.html" target="_blank">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp; 
+				   <a href="menu.html" target="_blank">Menu</a>     &nbsp;&nbsp;&nbsp;&nbsp;
+				   <a href="contactUs.html" target="_blank">Contact Us</a>
+				</p>
+			<hr />
+		</div>
+		<div align="center">
+		<table cellspacing="10">
+			<form action="submit.html" method="POST">
+				<tr>
+					<th align="right"><label for="name">Name:</label></th>
+						<td align="left"><input type="text" id="name" name="name"> </td>
+				</tr>
+				<tr>
+					<th align="right"><label for="email">Email:</label></th>
+						<td align="left"><input type="text" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<th align="right"><label for="phone">Phone:</label></th>
+						<td align="left"><input type="text" id="phone" name="phone"></td>
+				</tr>
+					
+				<tr>
+					<th align="right"><label for="reason">Reason for Inquiry: </label></th>
+						<td align="left"><select id="reason" name="reason">
+							<option value="default" selected>Catering</option>
+							<option value="party">Private Partyy</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select></td>
+				</tr>
+					
+				<tr>
+					<th align="right"><label for="info">Additional Information:</label></th>
+						<td><textarea id="info"></textarea></td>
+				</tr>
+					
+				<tr>
+					<th align="right"><label for="radioBut">Have you been to the restaurant? </label></th>
+						<td><input type="radio" id="choice1" name="questionnaire" value="yes">
+							<label for="choice1">Yes </label>
+						<input type="radio" id="choice2" name="questionnaire" value="no">
+							<label for="choice2">No</label></td>
+				</tr>
+						
+				<tr>
+					<th align="right"><label for="bestContact">Best days to contact you: </label></th>
+						<td align="left"><input type="checkbox" id="monday" name="checkContact" value="monday">
+							<label for="monday">M</label> 
+						<input type="checkbox" id="tuesday" name="checkContact" value="tuesday">
+							<label for="tuesday">T</label> 
+						<input type="checkbox" id="wednesday" name="checkContact" value="wednesday">
+							<label for="wednesday">W</label> 
+						<input type="checkbox" id="thursday" name="checkContact" value="thursday">
+							<label for="thursday">TH</label> 
+						<input type="checkbox" id="friday" name="checkContact" value="friday">
+							<label for="friday">F</label></td>
+				</tr>
+							
+				<tr><td colspan="2" align="right"><input type="submit" name="submit" value="Send Request"></td></tr>
+				
+			</form>
+		</table>
+		</div>
+		<div id="footer" align="center">
+			<hr />
+				<footer>
+					<p>1234 5th st n, Minneapolis, MN, 12345</p>
+					<p>123-456-7890</p>
+				</footer>
+		</div>
+	</body>
+</htm>
