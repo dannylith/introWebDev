@@ -1,0 +1,55 @@
+/* embedded font to use for title */
+@font-face
+{
+	font-family: KaushanScript;
+	src: url(KaushanScript.otf);
+	
+}
+
+/* This will change font and center title for all sites */
+#title
+{
+	font-family: KaushanScript;
+	text-align: center;
+}
+
+/* change index.html body background color to aqua */
+#homeMain
+{
+	background-color: aqua;
+}
+
+/* unselected link will be purple */
+a:link 
+{
+    color: purple;
+}
+
+/* clicking on link will change color to green */
+a:visited 
+{
+    color: green;
+}
+
+/* hoving over link will bold it */
+a:hover 
+{
+	font-weight: bold;
+}
+
+/* opening link will not change link to not underline */
+a:active, a:focus {
+    text-decoration: none;
+}
+
+/* change the all horizontal line to blue double line */
+hr
+{
+	border-top: 3px double blue;
+}
+
+/* center footer on all sites */
+#footer
+{
+	text-align: center;
+}
