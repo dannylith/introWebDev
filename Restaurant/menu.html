@@ -2,131 +2,165 @@
 <html>
 	<head>
 		<title>Menu</title>
-		<link href=" restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href=" css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<style>
-			th	
-			{
-				font-size: 20px; /* change all <th> to a bigger font size -->*/
-			}
 			body 
 			{
-				background-color: aqua; /* change entire menu.html back to blue */
+				background-color: aqua; /* change entire menu.html back to blue(from part 2) */
 			}
-			div tr:nth-child(even)
+			th
 			{
-				background-color: #ccffff;	/* change only third table <tr>, by even rows, to a different color */
+				font-size: 27px; /*change table header font size to match the h3 titles for the menu*/
+			}
+			tbody tr:nth-child(odd)
+			{
+				background-color: #ccffff; /* odd numbered table rows will have different color*/
+			}
+			h3
+			{
+				font-weight: bold; /* bold the h3 text*/
 			}
 		</style>
 	</head>
 	<body>
-		<div id="title">
-			<h1>Danny's Restaurant</h1>
-		</div>
-				<!-- links to home, menu, and contact us -->
-		<div id="navigation">
-			<hr />
-				<p><a href="index.html" target="_blank">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp; 
-				   <a href="menu.html" target="_blank">Menu</a>     &nbsp;&nbsp;&nbsp;&nbsp;
-				   <a href="contactUs.html" target="_blank">Contact Us</a>
-				</p>
-			<hr />
-		</div>
+		<noscript><p><b>This website is best viewed with JavaScript Enabled.</b></p></noscript>
+		<div class="container-fluid">
+		
+			<div class="row">
+				<div id="title" class="col">
+					<h1>Danny's Restaurant</h1>
+				</div>
+			</div>
+					<!-- links to home, menu, and contact us -->
+			<div class="row">
 
-		<!-- first table row for listing the food menu-->
-		<table align="center">
-			<tr>
-				<th>Burger and Fries</th>
-				<th>Hot Dob and Chips</th>
-				<th>Italian Sausage and Peppers</th>
-			</tr>
-			<tr align="center">
-				<td>An American Classic<br>
-					Your choice - with or without cheese<br>
-					Pickle, onion, tomato, and lettuce<br>
-					Serviced with our famous thick cut<br>
-					french fires</td>
-				<td>An Summer Classic!<br>
-					Your choice - white or wheat bun<br>
-					Relish, mustard, and ketchup<br>
-					Served with our house-made chips</td>
-				<td>An All-time Favoirte!!<br>
-					Your choice - mild or spicy<br>
-					Cole Slaw<br>
-					Served with garlic mashers</td>
-			</tr>
-			<tr align="center">
-				<td>$7.95</td>
-				<td>$7.95</td>
-				<td>$10.95</td>
-			</tr>
-		</table>
-		
-		<br><br>
-		
-		<!-- Second table for the menu -->
-		<table align="center">
-			<tr>
-				<th>Tenderloin Sandwich and Chips</th>
-				<th>House Salad</th>
-				<th>Brisket Sandwich and Fries</th>
-			</tr>
-			<tr align="center">
-				<td>Really Hits the Spot!<br>
-					Plain or Sesame Seed Bun<br>
-					Pickle, onion, tomota, and lettuce<br>
-					Served with our house-made chips</td>
-				<td>On the Lighter Side<br>
-					Your choice - with or without cheees<br>
-					Iceberg lettuce, tomatoes, peppers<br>
-					Thousand Island or Ranch Dressing<br>
-					Served with a dinner roll</td>
-				<td>A Taste of Texas!<br>
-					Smoked Brisket on thick-cut Texas<br>
-					Toast<br>
-					Cole Slaw<br>
-					Served with our famous thick-cut<br>
-					french fries</td>
-			</tr>
-			<tr align="center">
-				<td>$8.95</td>
-				<td>$6.95</td>
-				<td>$7.95</td>
-			</tr>
-		</table>
-		
-		<br><br>
-		
-		<div>
-			<!-- Third table for drinks -->
-			<table align="center" width="50%">
-				<tr>
-					<th align="left" colspan="2">Beverages</th>
-				</tr>
-				<tr>
-					<td>Root Beer</td>
-					<td>$3.00</td>
-				</tr>
-				<tr>
-					<td>Bottled Water</td>
-					<td>$1.25</td>
-				</tr>
-				<tr>
-					<td>Lemonade</td>
-					<td>$1.00</td>
-				</tr>
-				<tr>
-					<td>Iced Tea</td>
-					<td>$1.25</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div id="footer">
-			<hr />
-				<footer>
-					<p>1234 5th st n, Minneapolis, MN, 12345</p>
-					<p>123-456-7890</p>
-				</footer>
+				<div class="col">
+				<hr>
+					<ul class="nav nav-tabs">
+					   <li class="nav-item"><a class="nav-link" href="index.html" target="_blank"><span class="fa fa-home"></span></a></li> 
+					   <li class="nav-item"><a class="nav-link active" href="menu.html" target="_blank">Menu</a></li>
+					   <li class="nav-item"><a class="nav-link" href="contactUs.html" target="_blank">Contact Us</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<br><br>
+
+			<!-- first row for listing the food menu-->
+			<div class="row text-center">
+				<div class="col-sm-4">
+					<h3>Burger and Fries</h3>
+					<p>An American Classic<br>
+						Your choice - with or without cheese<br>
+						Pickle, onion, tomato, and lettuce<br>
+						Serviced with our famous thick cut<br>
+						french fires</p>
+					<p>$7.95</p>
+				</div>
+					
+				<div class="col-sm-4">
+					<h3>Hot Dob and Chips</h3>
+					<p>An Summer Classic!<br>
+						Your choice - white or wheat bun<br>
+						Relish, mustard, and ketchup<br>
+						Served with our house-made chips</p>
+						<p>$7.95</p>
+				</div>
+				
+				<div class="col-sm-4">
+					<h3>Italian Sausage and Peppers</h3>
+					<p>An All-time Favoirte!!<br>
+						Your choice - mild or spicy<br>
+						Cole Slaw<br>
+						Served with garlic mashers</p>
+						<p>$10.95</p>
+				</div>
+			
+
+			</div>
+			
+			<br><br>
+			
+			<!-- Second row for the menu -->
+			<div class="row text-center">
+				<div class="col-sm-4">
+					<h3>Tenderloin Sandwich and Chips</h3>
+					<p>Really Hits the Spot!<br>
+						Plain or Sesame Seed Bun<br>
+						Pickle, onion, tomota, and lettuce<br>
+						Served with our house-made chips</p>
+					<p>$8.95</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>House Salad</h3>
+					<p>On the Lighter Side<br>
+						Your choice - with or without cheees<br>
+						Iceberg lettuce, tomatoes, peppers<br>
+						Thousand Island or Ranch Dressing<br>
+						Served with a dinner roll</p>
+					<p>$6.95</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Brisket Sandwich and Fries</h3>
+					<p>A Taste of Texas!<br>
+						Smoked Brisket on thick-cut Texas<br>
+						Toast<br>
+						Cole Slaw<br>
+						Served with our famous thick-cut<br>
+						french fries</p>
+					<p>$7.95</p>
+				</div>
+
+			</div>
+			
+			<br><br>
+			
+			<div class="row text-center">
+				<div class="col">
+					<!-- Table for drinks -->
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-center"" colspan="2">Beverages</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Root Beer</td>
+								<td class="text-left">$3.00</td>
+							</tr>
+							<tr>
+								<td>Bottled Water</td>
+								<td class="text-left">$1.25</td>
+							</tr>
+							<tr>
+								<td>Lemonade</td>
+								<td class="text-left">$1.00</td>
+							</tr>
+							<tr>
+								<td>Iced Tea</td>
+								<td class="text-left">$1.25</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<!-- footer -->
+			<div id="footer" class="row">
+				
+					<div class="col">
+					<hr />
+						<footer>
+							<p>1234 5th st n, Minneapolis, MN, 12345</p>
+							<p>123-456-7890</p>
+						</footer>
+					</div>
+			</div>
 		</div>
 	</body>
 </htm>

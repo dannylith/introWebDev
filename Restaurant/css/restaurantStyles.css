@@ -1,0 +1,79 @@
+/* embedded font to use for title */
+@font-face
+{
+	font-family: KaushanScript;
+	src: url(KaushanScript.otf);
+	
+}
+
+/* This will change font and center title for all sites */
+#title
+{
+	font-family: KaushanScript;
+	text-align: center;
+}
+
+/* change image and description background section color to aqua; header, navigation, and footer should be white (This is meant for part 2 of the project) */
+/* this is no longer being used since after part 3, I changed the entire body backgroud color */
+#homeMain
+{
+	background-color: aqua;
+}
+
+/* unselected link will be purple (part 2 of project) */
+a:link 
+{
+    color: purple;
+}
+
+/* clicking on link will change color to green (part 2 of project*/
+a:visited 
+{
+    color: green;
+}
+
+/* hoving over link will bold it (part 2 of project)*/
+a:hover 
+{
+	font-weight: bold;
+}
+
+/* opening link will not change link to not underline (part 2 of project)*/
+a:active, a:focus 
+{
+    text-decoration: none;
+}
+
+/* change the all horizontal line to blue double line */
+hr
+{
+	border-top: 3px double blue;
+}
+
+/* center footer on all sites */
+#footer
+{
+	text-align: center;
+}
+
+.carousel-indicators 
+{
+  bottom:-50px; /*move the carousel indicators down*/
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+	visibility: hidden; /*remove arrows on carousel */
+}
+noscript
+{
+	/*noscript tag will be centered and have red text*/
+	color: red;
+	text-align: center;
+}
+
+/* all website has aqua background color */
+ body
+ {
+	 background-color: aqua;
+ }

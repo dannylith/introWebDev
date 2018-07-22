@@ -2,37 +2,108 @@
 <html>
 	<head>
 		<title>Danny's Restaurant</title>
-		<link href=" restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link href=" css/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	</head>
-	<body>
-		<div id="title">
-			<h1>Danny's Restaurant</h1>
-		</div>
-		
-		<!-- links to home, menu, and contact us -->
-		<div id="navigation">
-			<hr />
-				<p><a href="index.html" target="_blank">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp; 
-				   <a href="menu.html" target="_blank">Menu</a>     &nbsp;&nbsp;&nbsp;&nbsp;
-				   <a href="contactUs.html" target="_blank">Contact Us</a>
-				</p>
-			<hr />
-		</div>
-		
-			<!-- image and basic description -->
-		<div id="homeMain" align="center">
-			<img src="burger.jpeg" alt="A picture of a burger" style="width: 400px; height: 150px;"></image>
-			<h2>Restaurant Description</h2>
-				<p>A paragraph about the restaurant</p>
-		</div>
-		
-		<!-- footer -->
-		<div id="footer">
-			<hr />
-				<footer>
-					<p>1234 5th st n, Minneapolis, MN, 12345</p>
-					<p>123-456-7890</p>
-				</footer>
+	<body >
+		<noscript><p><b>This website is best viewed with JavaScript Enabled.</b></p></noscript>
+		<div class="container-fluid">
+			
+			<div class="row">
+				<div id="title" class="col">
+					<h1>Danny's Restaurant</h1>
+				</div>
+			</div>
+			
+			<!-- links to home, menu, and contact us -->
+			<div class="row">
+				
+				<div class="col">
+				<hr>
+					<ul class="nav nav-tabs">
+					   <li class="nav-item"><a class="nav-link active" href="index.html" target="_blank"><span class="fa fa-home"></span></a></li> 
+					   <li class="nav-item"><a class="nav-link" href="menu.html" target="_blank">Menu</a></li>
+					   <li class="nav-item"><a class="nav-link" href="contactUs.html" target="_blank">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<br><br>
+			
+			<!-- jumbotron carousel -->
+			<div class="row">
+			
+				<div class="jumbotron col">
+					 <div id="demo" class="carousel slide" data-ride="carousel">
+					 
+						<!-- indicators -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<h2>Danny's restaurant is opening a new location!</h2>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<h2>We're rolling out our seasonal menu, with special options for this season.</h2>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<h2>The Drink of the Month is SG Special Brew.</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+				<!-- image and basic description -->
+			<div id="homeMain" class="row text-center">
+				<div class="col">
+					<img src="burger.jpeg" class="img-fluid" alt="A picture of a burger" style="width: 400px; height: 150px;"></image>
+					<h2>Restaurant Description</h2>
+						<p>A paragraph about the restaurant</p>
+				</div>
+			</div>
+			
+			<!-- footer -->
+			
+			<div id="footer" class="row">
+				
+					<div class="col">
+					<hr />
+						<footer>
+							<p>1234 5th st n, Minneapolis, MN, 12345</p>
+							<p>123-456-7890</p>
+						</footer>
+					</div>
+			</div>
 		</div>
 	</body>
 	</body>
