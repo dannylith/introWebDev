@@ -13,12 +13,7 @@
 			{
 				font-weight: bold; /* bold the label of required fields (from part 2 of restaraunt)*/
 			}
-			.asterisk:after 
-			{
-				content:" *";  /* when add
-				color: #e32;
 
-				}
 		</style>
 	</head>
 	<body>
@@ -112,14 +107,14 @@
 								<legend class="col-form-label col-sm-4 text-right">Have you been to the restaurant?</legend>
 								<div class="col-sm-4">
 									<div class="form-check-inline">
-										<input class="form-check-input" type="radio" name="questionaire" id="questionaire" checked>
-										<label class="form-check-label" for="Yes">
+										<input class="form-check-input" type="radio" name="questionaire" value="yes" id="yes" checked>
+										<label class="form-check-label" for="yes">
 										Yes
 										</label>
 									</div>
 									<div class="form-check-inline">
-										<input class="form-check-input" type="radio" name="questionaire" id="questionaire">
-										<label class="form-check-label" for="No">
+										<input class="form-check-input" type="radio" name="questionaire" value="no" id="no">
+										<label class="form-check-label" for="no">
 										No
 										</label>
 									</div>
@@ -130,7 +125,7 @@
 								
 								<!-- checkbox field to select days for best contact -->
 						<div class="form-group row">
-							<label for="bestContact" class="col-sm-4 col-form-label text-right">Best days to contact you: </label></td>
+							<label class="col-sm-4 col-form-label text-right">Best days to contact you: </label>
 								<div class="col-sm-4">
 									<div class="form-check-inline">
 										<input class="form-check-input" type="checkbox" id="monday">
@@ -179,4 +174,4 @@
 				</div>
 		</div>
 	</body>
-</htm>
+</html>
